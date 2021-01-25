@@ -5,9 +5,6 @@ import requests
 import json
 import pdb
 
-
-
-
 app=Flask(__name__)
 
 @app.route('/ProcessPayment/', methods=['GET'])
