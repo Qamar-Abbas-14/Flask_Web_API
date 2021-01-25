@@ -3,7 +3,7 @@ from flask_restful import Api, Resource
 from flask import jsonify
 from datetime import datetime
 from verfiications import Card_Verifications
-from payment_gateways import MakePayment
+from payment_gateways import select_payment_gateway
 
 import requests
 import json
@@ -31,8 +31,8 @@ def ProcessPayment():
         if validity:
             print("Proceeding for payment methods")
             amount=data['AMT']
-            obj=MakePayment(data)
-            msg, code =obj.select_payment_gateway()
+            obj=select_payment_gateway(data)
+            msg, code =obj.MakePayment()
             print(msg,code)
             return msg, code
 

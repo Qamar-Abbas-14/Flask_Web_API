@@ -24,12 +24,12 @@ class PremiumPaymentGateway(PaymentGateway):
         print(f"Method is {self.service}")
 
 
-class MakePayment():
+class select_payment_gateway():
     def __init__(self, data):
         self.data = data
         self.AMT=data['AMT']
 
-    def select_payment_gateway(self):
+    def MakePayment(self):
         if self.AMT>0 and self.AMT<=20:
             try:
                 payment_service =  CheapPaymentGateway(self.data)
