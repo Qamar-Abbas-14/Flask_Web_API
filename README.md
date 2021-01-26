@@ -10,7 +10,7 @@ A flask API which checks Credit Card Validity, Credit Card Holder, Security Code
 # Notes
 1) Card Number must be valid(without '-') as per the Luhn algorithm or Luhn formula, also known as the "modulus 10" algorithm.
 2) Security Code must be string having length 3.
-3) Expiry Date of Card must be in the future in format MM/YYYY. Cards having Expiry Date of Current month of the present year are treated invalid by App.
+3) Expiry Date of Card must be in future with format MM/YYYY. Cards having Expiry Date of Current month of the present year are treated invalid by App.
 4) Amount must be in decimal and greater then zero.
 
 Recommendations/Suggestions for Improvement are highly appreciated.
