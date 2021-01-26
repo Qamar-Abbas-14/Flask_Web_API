@@ -13,4 +13,4 @@ A flask API which checks Credit Card Validity, Credit Card Holder, Security Code
 3) Expiry Date of Card must be in the future. Cards having Expiry Date of Current month of the present year are treated invalid by App.
 4) Amount must be in decimal and greater then zero
 
-Recommendations/Suggestions for Improvements are Highly Appreciated.
+Recommendations/Suggestions for Improvement are highly appreciated.
